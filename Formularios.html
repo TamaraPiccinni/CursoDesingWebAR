@@ -1,0 +1,39 @@
+<!-- Crea un formulario para el control de acceso a una web. 
+Debe llamar a la URL http://127.0.0.1/login_usuario con los campos 
+nombre_usuario y password. 
+Los atributos no deben ser visibles en la URL. 
+La página debe tener un título que indique la pantalla en la que se encuentra 
+(también debe mostrar el título en el navegador). 
+No es necesario que sea estético. -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Control de acceso</title>
+</head>
+<body>
+    <h1>Control de acceso</h1>
+    <form action="http://127.0.0.1/login_usuario " method="post">
+        <label for="nombre_usuario">Nombre de usuario</label>
+        <input type="text" name="nombre_usuario" id="nombre_usuario">
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <input type="submit" value="Enviar">
+
+</html>
+
+<!-- <!DOCTYPE html>: Define el tipo de documento como HTML5.
+<html lang="es">: Define el lenguaje del documento como español.
+<head>: Encabezado del documento donde se colocan los metadatos y el título de la página.
+<meta charset="UTF-8">: Especifica el juego de caracteres UTF-8 para admitir caracteres especiales.
+<title>Control de Acceso</title>: Establece el título de la página que se mostrará en el navegador.
+<body>: Cuerpo del documento donde se coloca el contenido visible de la página.
+<h1>Control de Acceso</h1>: Encabezado de nivel 1 que indica la pantalla en la que se encuentra.
+<form>: Elemento de formulario que envía los datos a la URL especificada en el atributo action.
+action="http://127.0.0.1/login_usuario": Especifica la URL a la que se enviarán los datos del formulario (procura sustituirlo por la URL correcta de tu servidor).
+method="post": Indica que los datos del formulario se enviarán usando el método HTTP POST (para no mostrar los atributos en la URL).
+<label>: Etiquetas que describen los campos del formulario.
+<input>: Campos de entrada del formulario, uno de tipo text para el nombre de usuario y otro de tipo password para la contraseña.
+required: Atributo que indica que los campos son obligatorios y deben ser completados antes de enviar el formulario.
+<input type="submit">: Botón de envío para iniciar sesión. -->
