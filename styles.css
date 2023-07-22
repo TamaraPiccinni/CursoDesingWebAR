@@ -1,0 +1,37 @@
+/* Estilos generales para la tabla */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+  }
+  
+  th, td {
+    border: 2px solid black;
+    padding: 1%;
+    text-align: center;
+    font-weight: bold;
+  }
+  /* Estilos para las filas intermedias (azul y azul más claro) */
+  tbody tr:nth-child(even) {
+    background-color: #77a9dc;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #c0d8f0;
+  }
+  /* Estilos para la primera fila */
+  thead tr { 
+    background-color: rgb(255, 132, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  /* Estilos para la ultima fila */
+  tbody tr:last-child {
+    background-color: rgb(255, 132, 0);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  
+  
